@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+/* Don't scan the exported design reference (its emoji-encoded url() classes break CSS gen). */
+@source not "../_reference";
+
+/* ------------------------------------------------------------------ *
+ * MPA design tokens — extracted verbatim from design.pen
+ * (frames "MPA Landing Page" uxsUc + "MPA Landing Page — Mobile" n7Tzi)
+ * ------------------------------------------------------------------ */
+@theme {
+  --font-sans: 'Rethink Sans', system-ui, sans-serif;
+
+  /* Core brand */
+  --color-espresso: #120803; /* dark bands: navbar, hero, stats, footer */
+  --color-cream: #f7f0e4; /* light sections */
+  --color-gold: #c8a05a; /* accent / labels / CTA badge */
+  --color-offwhite: #fdfaf5; /* text on dark */
+
+  /* Pillar panel darks (Écosystème) */
+  --color-panel-salon: #111010;
+  --color-panel-cosmetics: #1c1410;
+  --color-panel-beauty: #1a1014;
+
+  /* Warm neutrals */
+  --color-mocha: #7a6858; /* muted text on dark */
+  --color-mocha-2: #8a7a66; /* muted arrows / icons */
+  --color-clay: #d3ac8b; /* nude product / photo tint */
+  --color-ink: #1a0c05; /* headings on cream */
+  --color-quote: #5a4434; /* quote text on cream */
+
+  /* Motion — strong custom curves (Emil / animations.dev) */
+  --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Infinite marquee (two identical copies, translate one full set = -50%) */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  animation: marquee var(--marquee-duration, 45s) linear infinite;
+  will-change: transform;
+}
+.marquee:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation-name: none !important;
+    transform: none !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-espresso);
+}
+
+/* Reduced motion: keep opacity/color, drop movement */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
