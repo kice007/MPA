@@ -114,7 +114,7 @@ export default function Ecosysteme() {
         </h2>
       </Reveal>
 
-      <div className="flex flex-col gap-4 lg:gap-6">
+      <div className="flex flex-col">
         {PILLARS.map((p) => (
           <Pillar key={p.category} p={p} />
         ))}
