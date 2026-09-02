@@ -37,7 +37,7 @@ const PILLARS = [
     cta_color: '#c4848a',
     panel: '#1a1014',
     desc_color: '#d4a8a8',
-    image: asset('Screenshot 2026-06-23 202208.png'),
+    image: asset('eco-cosmetics.png'),
     imageRight: false,
   },
 ]

@@ -7,7 +7,7 @@ import { Star } from './icons'
 const PRODUCTS = [
   { title: 'MPA Virgin Hair Bundles', price: '10.000F', filled: 5, img: asset('product_1.png') },
   { title: "Éclat d'Afrique Sérum", price: '15.000F', filled: 5, img: asset('product_2.png') },
-  { title: 'Masque Lumière Intense', price: '8.000F', filled: 4, img: asset('Screenshot 2026-06-23 203058-Photoroom.png') },
+  { title: 'Masque Lumière Intense', price: '8.000F', filled: 4, img: asset('product-masque.png') },
   { title: 'Huile de Soin Capillaire', price: '15.000F', filled: 5, img: asset('aaa.png') },
 ]
 

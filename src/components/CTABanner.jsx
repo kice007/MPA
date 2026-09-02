@@ -4,7 +4,7 @@ import { asset } from '../lib/assets'
 import { EASE_LUXE, EASE_OUT, tap, tapTransition } from '../lib/motion'
 import { ArrowUpRight } from './icons'
 
-const BG = asset('LA NOUVELLE GAMME « STRONG » BY MPA EST ENFIN DISPONIBLE 🔥La « STRONG GIRL » que vous voyez su.jpg')
+const BG = asset('cta-strong.jpg')
 
 export default function CTABanner() {
   const ref = useRef(null)

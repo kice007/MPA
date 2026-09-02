@@ -6,11 +6,11 @@ import { ArrowUpRight } from './icons'
 
 // Collage images (verbatim filenames from design.pen)
 const P = {
-  strongboy: asset('L’huile pour la barbe est disponible 🔥🔥Le « STRONG BOY » que vous observez dans cette image es-Photoroom.png'),
+  strongboy: asset('about-strongboy.png'),
   masque: asset('about_4.png'),
   saveclip: asset('SaveClip.App_586701294_18397300210125511_3165108400937685293_n-Photoroom.png'),
-  fardpaup: asset('Le fard à paupièresMPA - une couleur intense et lumineuse qui sublime le regard avec une tenue l-Photoroom.png'),
-  fardjoues: asset('Fard à joues - une texture douce et soyeuse qui apporte une touche de couleur fraîche et naturel-Photoroom.png'),
+  fardpaup: asset('about-fard-paupieres.png'),
+  fardjoues: asset('about-fard-joues.png'),
   gemini: asset('Gemini_Generated_Image_2tj9id2tj9id2tj9-Photoroom.png'),
 }
 

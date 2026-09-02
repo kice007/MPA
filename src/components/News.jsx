@@ -7,7 +7,7 @@ const FEATURED = {
   cat: 'Beauté Africaine',
   date: '2 Juin 2025',
   title: 'Comment choisir les meilleurs soins pour votre type de peau',
-  img: asset('À quoi sert une huile pailletée MPA BEAUTY _•_Hydrater la peau_•_Donner un effet satiné ou scin.jpg'),
+  img: asset('news-huile-pailletee.jpg'),
 }
 
 const ARTICLES = [
